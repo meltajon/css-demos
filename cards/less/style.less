@@ -1,0 +1,52 @@
+.card {
+  border: 1px solid #E5E5E5;
+  position: relative;
+
+  .flexbox &,
+  .grid & {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &-thumb {
+    max-width: 100%;
+  }
+
+  &-body {
+    padding: 0 20px 20px;
+  }
+
+  &-thumb {
+    width: 100%;
+  }
+
+  &-body {
+    .flexbox &,
+    .grid & {
+      // as flex item
+      flex-grow: 1;
+
+      // as flex container
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &-description {
+    .flexbox &,
+    .grid & {
+      flex-grow: 1;
+    }
+  }
+
+  &-dismiss {
+    display: inline-block;
+    color: blue;
+    cursor: pointer;
+
+    .flexbox &,
+    .grid & {
+      margin-top: auto;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+.card {
+  border: 1px solid #E5E5E5;
+  position: relative;
+}
+.flexbox .card,
+.grid .card {
+  display: flex;
+  flex-direction: column;
+}
+.card-thumb {
+  max-width: 100%;
+}
+.card-body {
+  padding: 0 20px 20px;
+}
+.card-thumb {
+  width: 100%;
+}
+.flexbox .card-body,
+.grid .card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+.flexbox .card-description,
+.grid .card-description {
+  flex-grow: 1;
+}
+.card-dismiss {
+  display: inline-block;
+  color: blue;
+  cursor: pointer;
+}
+.flexbox .card-dismiss,
+.grid .card-dismiss {
+  margin-top: auto;
+}
