@@ -33,7 +33,6 @@ body {
 
 .header {
   background-color: @blue;
-  grid-area: header;
 
   &::before {
     content: 'header';
@@ -42,7 +41,6 @@ body {
 
 .nav {
   background-color: @dark-blue;
-  grid-area: nav;
 
   &::before {
     content: 'nav';
@@ -50,8 +48,6 @@ body {
 }
 
 .content {
-  grid-area: content;
-
   img {
     max-width: 100%;
     width: 100%;
@@ -64,7 +60,6 @@ body {
 
   &-bottom {
     background-color: @gray;
-    grid-area: content-bottom;
 
     &::before {
       content: 'content bottom'
@@ -75,7 +70,6 @@ body {
 .sidebar {
   &-primary {
     background-color: @yellow;
-    grid-area: sidebar-primary;
 
     &::before {
       content: 'sidebar';
@@ -84,7 +78,6 @@ body {
 
   &-secondary {
     background-color: @dark-yellow;
-    grid-area: sidebar-secondary;
 
     &::before {
       content: 'sidebar';
@@ -94,7 +87,6 @@ body {
 
 .footer {
   background-color: @red;
-  grid-area: footer;
 
   &::before {
     content: 'footer';
