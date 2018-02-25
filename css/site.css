@@ -1,0 +1,39 @@
+@charset "utf-8";
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 1.2em;
+  margin-left: 0;
+  margin-right: 0;
+}
+h1 {
+  font-size: 1.2em;
+  text-align: center;
+  text-transform: uppercase;
+}
+h2 {
+  font-size: 1em;
+}
+a {
+  text-decoration: none;
+}
+section {
+  min-height: 50vh;
+  padding-top: 10vh;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 10vh;
+}
+section:nth-of-type(even) {
+  background-color: #EFEFEF;
+}
+.good::before {
+  display: inline;
+  color: #55BA9E;
+  content: '✔ ';
+}
+.bad::before {
+  display: inline;
+  color: #B3432F;
+  content: '✘ ';
+}
