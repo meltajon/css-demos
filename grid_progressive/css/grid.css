@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
   }
-  @supports (display: contents) {
+  @supports (display: contents) and (caret-color: transparent) {
     body {
       display: grid;
       grid-template-columns: auto 2fr auto;
@@ -17,7 +17,7 @@
   display: flex;
   flex-grow: 1;
 }
-@supports (display: contents) {
+@supports (display: contents) and (caret-color: transparent) {
   .row {
     display: contents;
   }
@@ -26,7 +26,7 @@
   display: flex;
   flex-direction: column;
 }
-@supports (display: contents) {
+@supports (display: contents) and (caret-color: transparent) {
   .column {
     display: contents;
   }
