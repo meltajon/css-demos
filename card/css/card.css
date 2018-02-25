@@ -1,0 +1,20 @@
+.position-absolute .card-body {
+  position: relative;
+}
+.position-absolute .card-description {
+  margin-bottom: 30px;
+}
+.position-absolute .card-more {
+  position: absolute;
+  bottom: 20px;
+}
+.flexbox .card-body {
+  display: flex;
+  flex-direction: column;
+}
+.flexbox .card-description {
+  margin-bottom: auto;
+}
+.flexbox .card-more {
+  margin-top: auto;
+}

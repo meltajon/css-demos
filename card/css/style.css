@@ -1,0 +1,25 @@
+.cards {
+  display: flex;
+  justify-content: space-between;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: #FFF;
+  border: 1px solid #E5E5E5;
+  position: relative;
+  max-width: 320px;
+  vertical-align: top;
+}
+.card-thumb {
+  max-width: 100%;
+  width: 100%;
+}
+.card-body {
+  flex-grow: 1;
+  padding: 0 20px 20px;
+}
+.card-more {
+  display: inline-block;
+  color: blue;
+}
