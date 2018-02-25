@@ -1,0 +1,23 @@
+ul {
+  border-bottom: 2px solid #38485D;
+  padding-left: 0;
+}
+li {
+  line-height: 0;
+  list-style: none;
+}
+a {
+  display: block;
+  background-color: #38485D;
+  border-color: #FFF;
+  border-radius: 10px 10px 0 0;
+  border-style: solid;
+  border-width: 0 1px;
+  color: #FFF;
+  line-height: 1em;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+}

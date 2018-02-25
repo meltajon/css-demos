@@ -1,0 +1,75 @@
+.inline-blocks {
+  ul {
+    font-size: 0;
+  }
+
+  li {
+    display: inline-block;
+    font-size: 1rem;
+    width: 20%;
+  }
+}
+
+
+.table {
+  ul {
+    display: table;
+    width: 100%;
+  }
+
+  li {
+    display: table-cell;
+    text-align: center;
+  }
+}
+
+
+.floats {
+  ul {
+    &::after {
+      display: table;
+      clear: both;
+      content: '';
+    }
+  }
+
+  li {
+    float: left;
+    width: 20%;
+  }
+}
+
+
+.flexbox {
+  ul {
+    display: flex;
+  }
+
+  li {
+    flex-basis: auto;
+    flex-grow: 1;
+    text-align: center;
+  }
+}
+
+
+.flexbox_text-wrap {
+  ul {
+    display: flex;
+  }
+
+  li {
+    // as flex item
+    flex-basis: auto;
+    flex-grow: 1;
+    text-align: center;
+
+    // as flex container
+    display: flex;
+    flex-direction: column;
+  }
+
+  a {
+    flex-grow: 1;
+  }
+}

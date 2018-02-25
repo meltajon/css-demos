@@ -1,0 +1,46 @@
+.inline-blocks ul {
+  font-size: 0;
+}
+.inline-blocks li {
+  display: inline-block;
+  font-size: 1rem;
+  width: 20%;
+}
+.table ul {
+  display: table;
+  width: 100%;
+}
+.table li {
+  display: table-cell;
+  text-align: center;
+}
+.floats ul::after {
+  display: table;
+  clear: both;
+  content: '';
+}
+.floats li {
+  float: left;
+  width: 20%;
+}
+.flexbox ul {
+  display: flex;
+}
+.flexbox li {
+  flex-basis: auto;
+  flex-grow: 1;
+  text-align: center;
+}
+.flexbox_text-wrap ul {
+  display: flex;
+}
+.flexbox_text-wrap li {
+  flex-basis: auto;
+  flex-grow: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.flexbox_text-wrap a {
+  flex-grow: 1;
+}
