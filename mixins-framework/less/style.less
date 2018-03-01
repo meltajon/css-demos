@@ -1,0 +1,45 @@
+@import url('../../less/variables.less');
+
+.columns {
+  > * {
+    outline: 1px solid @gray;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+
+    &:nth-of-type(even) {
+      background-color: @gray;
+    }
+  }
+}
+
+.grid {
+  outline: 1px solid @gray;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80%;
+  width: 100%;
+
+  &-row { }
+
+  &-item {
+    outline: 1px solid @blue;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+
+    .grid-row:nth-of-type(odd) & {
+      &:nth-of-type(odd) {
+        background-color: @blue;
+      }
+    }
+
+    .grid-row:nth-of-type(even) & {
+      &:nth-of-type(even) {
+        background-color: @blue;
+      }
+    }
+  }
+}

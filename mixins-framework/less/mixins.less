@@ -1,0 +1,40 @@
+.columns(@gutter) {
+  display: flex;
+  justify-content: space-between;
+
+  > * {
+    flex-basis: 0;
+    flex-grow: 1;
+    margin-right: @gutter;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+
+.grid(@columns, @gutter) {
+  @supports (display: contents) and (caret-color: red) {
+    display: grid;
+    grid-template-columns: repeat(@columns, 1fr);
+    grid-gap: @gutter;
+  }
+
+  > * {
+    display: flex;
+
+    @supports (display: contents) and (caret-color: red) {
+      display: contents;
+    }
+
+    > * {
+      flex-basis: 0;
+      flex-grow: 1;
+
+      @supports (display: contents) and (caret-color: red) {
+        flex-grow: unset;
+      }
+    }
+  }
+}

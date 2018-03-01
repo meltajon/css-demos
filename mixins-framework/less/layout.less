@@ -1,0 +1,14 @@
+@import url('../../less/variables.less');
+@import url('mixins.less');
+
+.test-columns {
+  @media (min-width: 601px) {
+    .columns(15px);
+  }
+}
+
+.test-grid {
+  @media (min-width: 901px) {
+    .grid(4, 20px);
+  }
+}
