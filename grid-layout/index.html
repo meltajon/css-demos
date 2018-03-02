@@ -3,12 +3,21 @@
   <link rel="stylesheet" href="../css/site.css" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/layout.css" />
+  <script src="../js/jquery-3.3.1.min.js"></script>
 </head>
-<body>
+<body class="default">
 
   <header class="header"></header>
 
-  <nav class="nav"></nav>
+  <nav class="nav">
+    <a href="#default" data-theme="default">Home</a>
+    <a href="#alt1" data-theme="alt1">Alternate 1</a>
+    <a href="#alt2" data-theme="alt2">Alternate 2</a>
+    <a href="#alt3" data-theme="alt3">Alternate 3</a>
+    <a href="#alt4" data-theme="alt4">Alternate 4</a>
+    <a href="#alt5" data-theme="alt5">Alternate 5</a>
+    <a href="#alt6" data-theme="alt6">Alternate 6</a>
+  </nav>
 
   <main class="content">
     <p>
@@ -23,6 +32,15 @@
   <aside class="sidebar-secondary"></aside>
 
   <footer class="footer"></footer>
+
+  <script>
+    function change_theme() {
+      var theme = $(this).attr('data-theme');
+      $('body').attr("class", theme);
+    }
+
+    $('.nav a').on("click", change_theme);
+  </script>
 
 </body>
 </html>

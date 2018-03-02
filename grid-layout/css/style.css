@@ -30,8 +30,16 @@ body .footer {
   background-color: #3F7DB6;
   grid-area: nav;
 }
-.nav::before {
-  content: 'nav';
+.alt5 .nav,
+.alt6 .nav {
+  display: block;
+}
+.nav a {
+  color: #FFF;
+}
+.alt5 .nav a,
+.alt6 .nav a {
+  display: block;
 }
 .content {
   grid-area: content;
