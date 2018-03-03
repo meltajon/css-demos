@@ -10,13 +10,14 @@
   <div class="blue"></div>
 
   <div class="dark-blue">
-    <a href="#default" data-theme="default">Home</a>
-    <a href="#alt1" data-theme="alt1">Alternate 1</a>
-    <a href="#alt2" data-theme="alt2">Alternate 2</a>
-    <a href="#alt3" data-theme="alt3">Alternate 3</a>
-    <a href="#alt4" data-theme="alt4">Alternate 4</a>
-    <a href="#alt5" data-theme="alt5">Alternate 5</a>
-    <a href="#alt6" data-theme="alt6">Alternate 6</a>
+    <a href="#default">Home</a>
+    <a href="#alt1">Alternate 1</a>
+    <a href="#alt2">Alternate 2</a>
+    <a href="#alt3">Alternate 3</a>
+    <a href="#alt4">Alternate 4</a>
+    <a href="#alt5">Alternate 5</a>
+    <a href="#alt6">Alternate 6</a>
+    <a href="#alt7">Alternate 7</a>
   </div>
 
   <div class="content">
@@ -33,11 +34,12 @@
 
   <script>
     function change_theme() {
-      var theme = $(this).attr('data-theme');
+      var theme = window.location.hash.substr(1);
       $('body').attr("class", theme);
     }
 
-    $('.dark-blue a').on("click", change_theme);
+    $(document).ready(change_theme);
+    $(window).on('hashchange', change_theme);
   </script>
 
 </body>
