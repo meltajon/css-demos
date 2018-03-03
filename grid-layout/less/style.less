@@ -12,12 +12,12 @@ body {
     padding-bottom: 30px;
   }
 
-  .header,
-  .nav,
-  .content-bottom,
-  .sidebar-primary,
-  .sidebar-secondary,
-  .footer {
+  .blue,
+  .dark-blue,
+  .gray,
+  .yellow,
+  .dark-yellow,
+  .red {
     display: flex;
     // flex-direction: column;
     align-items: center;
@@ -25,18 +25,18 @@ body {
   }
 }
 
-.header {
+.blue {
   background-color: @blue;
-  grid-area: header;
+  grid-area: blue;
 
   &::before {
-    content: 'header';
+    content: 'blue';
   }
 }
 
-.nav {
+.dark-blue {
   background-color: @dark-blue;
-  grid-area: nav;
+  grid-area: dark-blue;
 
   .alt5 &,
   .alt6 & {
@@ -46,7 +46,7 @@ body {
   }
 
   &::before {
-    // content: 'nav';
+    // content: 'dark-blue';
   }
 
   a {
@@ -71,42 +71,40 @@ body {
     margin-top: 0;
     margin-bottom: 1rem;
   }
-
-  &-bottom {
-    background-color: @gray;
-    grid-area: content-bottom;
-
-    &::before {
-      content: 'content bottom'
-    }
-  }
 }
 
-.sidebar {
-  &-primary {
-    background-color: @yellow;
-    grid-area: sidebar-primary;
-
-    &::before {
-      content: 'sidebar';
-    }
-  }
-
-  &-secondary {
-    background-color: @dark-yellow;
-    grid-area: sidebar-secondary;
-
-    &::before {
-      content: 'sidebar';
-    }
-  }
-}
-
-.footer {
-  background-color: @red;
-  grid-area: footer;
+.gray {
+  background-color: @gray;
+  grid-area: gray;
 
   &::before {
-    content: 'footer';
+    content: 'gray'
+  }
+}
+
+.yellow {
+  background-color: @yellow;
+  grid-area: yellow;
+
+  &::before {
+    content: 'yellow';
+  }
+}
+
+.dark-yellow {
+  background-color: @dark-yellow;
+  grid-area: dark-yellow;
+
+  &::before {
+    content: 'dark yellow';
+  }
+}
+
+.red {
+  background-color: @red;
+  grid-area: red;
+
+  &::before {
+    content: 'red';
   }
 }

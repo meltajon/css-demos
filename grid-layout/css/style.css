@@ -9,36 +9,36 @@ body > * {
   padding-right: 30px;
   padding-bottom: 30px;
 }
-body .header,
-body .nav,
-body .content-bottom,
-body .sidebar-primary,
-body .sidebar-secondary,
-body .footer {
+body .blue,
+body .dark-blue,
+body .gray,
+body .yellow,
+body .dark-yellow,
+body .red {
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
-.header {
+.blue {
   background-color: #4D95D8;
-  grid-area: header;
+  grid-area: blue;
 }
-.header::before {
-  content: 'header';
+.blue::before {
+  content: 'blue';
 }
-.nav {
+.dark-blue {
   background-color: #3F7DB6;
-  grid-area: nav;
+  grid-area: dark-blue;
 }
-.alt5 .nav,
-.alt6 .nav {
+.alt5 .dark-blue,
+.alt6 .dark-blue {
   display: block;
 }
-.nav a {
+.dark-blue a {
   color: #FFF;
 }
-.alt5 .nav a,
-.alt6 .nav a {
+.alt5 .dark-blue a,
+.alt6 .dark-blue a {
   display: block;
 }
 .content {
@@ -52,31 +52,32 @@ body .footer {
   margin-top: 0;
   margin-bottom: 1rem;
 }
-.content-bottom {
+.gray {
   background-color: #EDF0F1;
-  grid-area: content-bottom;
+  grid-area: gray;
 }
-.content-bottom::before {
-  content: 'content bottom';
+.gray::before {
+  content: 'gray';
 }
-.sidebar-primary {
+.yellow {
   background-color: #EBC643;
-  grid-area: sidebar-primary;
+  grid-area: yellow;
 }
-.sidebar-primary::before {
-  content: 'sidebar';
+.yellow::before {
+  content: 'yellow';
 }
-.sidebar-secondary {
+.dark-yellow {
   background-color: #E9A138;
-  grid-area: sidebar-secondary;
+  grid-area: dark-yellow;
 }
-.sidebar-secondary::before {
-  content: 'sidebar';
+.dark-yellow::before {
+  content: 'dark yellow';
 }
-.footer {
+.red {
   background-color: #D85740;
-  grid-area: footer;
+  grid-area: red;
 }
-.footer::before {
-  content: 'footer';
+.red::before {
+  content: 'red';
 }
+/*# sourceMappingURL=style.css.map */

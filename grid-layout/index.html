@@ -7,9 +7,9 @@
 </head>
 <body class="default">
 
-  <header class="header"></header>
+  <div class="blue"></div>
 
-  <nav class="nav">
+  <div class="dark-blue">
     <a href="#default" data-theme="default">Home</a>
     <a href="#alt1" data-theme="alt1">Alternate 1</a>
     <a href="#alt2" data-theme="alt2">Alternate 2</a>
@@ -17,21 +17,19 @@
     <a href="#alt4" data-theme="alt4">Alternate 4</a>
     <a href="#alt5" data-theme="alt5">Alternate 5</a>
     <a href="#alt6" data-theme="alt6">Alternate 6</a>
-  </nav>
+  </div>
 
-  <main class="content">
-    <p>
-      Vestibulum varius scelerisque facilisis. Nunc interdum sapien vel diam ultrices laoreet. Fusce finibus leo nulla, sed suscipit tortor eleifend vitae. Donec luctus nisl vel volutpat viverra. Mauris convallis fringilla nisl, a porta dolor ultrices nec. Proin porttitor viverra tristique. Vivamus tempor commodo malesuada. Vivamus vitae nulla ornare, mollis sem a, hendrerit velit. Pellentesque laoreet eros leo, at ultricies neque imperdiet et. Quisque viverra libero ut risus hendrerit, sit amet imperdiet lorem mattis. Vivamus iaculis diam nisl, ut vestibulum dui ultricies in. Pellentesque dapibus interdum dui, quis aliquam mi vehicula in. Aliquam placerat consequat tellus, finibus convallis nibh. Vestibulum eget tristique enim. Morbi vestibulum leo ut gravida euismod.
-    </p>
-  </main>
+  <div class="content">
+    <p>Vestibulum varius scelerisque facilisis. Nunc interdum sapien vel diam ultrices laoreet. Fusce finibus leo nulla, sed suscipit tortor eleifend vitae. Donec luctus nisl vel volutpat viverra. Mauris convallis fringilla nisl, a porta dolor ultrices nec. Proin porttitor viverra tristique. Vivamus tempor commodo malesuada. Vivamus vitae nulla ornare, mollis sem a, hendrerit velit. Pellentesque laoreet eros leo, at ultricies neque imperdiet et. Quisque viverra libero ut risus hendrerit, sit amet imperdiet lorem mattis. Vivamus iaculis diam nisl, ut vestibulum dui ultricies in. Pellentesque dapibus interdum dui, quis aliquam mi vehicula in. Aliquam placerat consequat tellus, finibus convallis nibh. Vestibulum eget tristique enim. Morbi vestibulum leo ut gravida euismod.</p>
+  </div>
 
-  <div class="content-bottom"></div>
+  <div class="gray"></div>
 
-  <aside class="sidebar-primary"></aside>
+  <div class="yellow"></div>
 
-  <aside class="sidebar-secondary"></aside>
+  <div class="dark-yellow"></div>
 
-  <footer class="footer"></footer>
+  <div class="red"></div>
 
   <script>
     function change_theme() {
@@ -39,7 +37,7 @@
       $('body').attr("class", theme);
     }
 
-    $('.nav a').on("click", change_theme);
+    $('.dark-blue a').on("click", change_theme);
   </script>
 
 </body>

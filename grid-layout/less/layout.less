@@ -9,11 +9,11 @@ body {
     grid-template-columns: auto 2fr auto;
     grid-template-rows: auto auto 1fr auto;
     grid-template-areas:
-      "header header header"
-      "nav nav nav"
-      "sidebar-primary content sidebar-secondary"
-      "sidebar-primary content-bottom sidebar-secondary"
-      "footer footer footer"
+      "blue blue blue"
+      "dark-blue dark-blue dark-blue"
+      "yellow content dark-yellow"
+      "yellow gray dark-yellow"
+      "red red red"
     ;
     grid-gap: 0;
   }
@@ -24,11 +24,11 @@ body {
     grid-template-columns: auto 2fr auto;
     grid-template-rows: auto auto 1fr auto;
     grid-template-areas:
-      "header header header"
-      "nav nav nav"
-      "sidebar-primary content sidebar-secondary"
-      "sidebar-primary content-bottom content-bottom"
-      "footer footer footer"
+      "blue blue blue"
+      "dark-blue dark-blue dark-blue"
+      "yellow content dark-yellow"
+      "yellow gray gray"
+      "red red red"
     ;
     grid-gap: 0;
   }
@@ -39,11 +39,11 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto 1fr auto;
     grid-template-areas:
-      "header header header"
-      "nav nav nav"
+      "blue blue blue"
+      "dark-blue dark-blue dark-blue"
       "content content content"
-      "sidebar-primary content-bottom sidebar-secondary"
-      "footer footer footer"
+      "yellow gray dark-yellow"
+      "red red red"
     ;
     grid-gap: 0;
   }
@@ -54,12 +54,12 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto 1fr auto auto auto;
     grid-template-areas:
-      "header header header"
-      "nav nav nav"
+      "blue blue blue"
+      "dark-blue dark-blue dark-blue"
       "content content content"
-      "content-bottom content-bottom content-bottom"
-      "sidebar-primary sidebar-primary sidebar-secondary"
-      "footer footer footer"
+      "gray gray gray"
+      "yellow yellow dark-yellow"
+      "red red red"
     ;
     grid-gap: 0;
   }
@@ -70,12 +70,12 @@ body {
     grid-template-columns: auto 1fr 1fr;
     grid-template-rows: auto auto 1fr auto auto auto;
     grid-template-areas:
-      "sidebar-primary header header"
-      "sidebar-primary nav nav"
-      "sidebar-primary content content"
-      "sidebar-primary content-bottom content-bottom"
-      "sidebar-primary sidebar-secondary sidebar-secondary"
-      "sidebar-primary footer footer"
+      "yellow blue blue"
+      "yellow dark-blue dark-blue"
+      "yellow content content"
+      "yellow gray gray"
+      "yellow dark-yellow dark-yellow"
+      "yellow red red"
     ;
     grid-gap: 0;
   }
@@ -86,11 +86,11 @@ body {
     grid-template-columns: 200px 1fr 1fr;
     grid-template-rows: auto 1fr auto auto auto;
     grid-template-areas:
-      "nav header header"
-      "nav content content"
-      "nav content-bottom content-bottom"
-      "nav sidebar-primary sidebar-secondary"
-      "nav footer footer"
+      "dark-blue blue blue"
+      "dark-blue content content"
+      "dark-blue gray gray"
+      "dark-blue yellow dark-yellow"
+      "dark-blue red red"
     ;
     grid-gap: 0;
   }
@@ -101,11 +101,11 @@ body {
     grid-template-columns: 200px 1fr 1fr 200px;
     grid-template-rows: auto 1fr auto auto auto;
     grid-template-areas:
-      "header . . ."
-      "nav content content ."
-      "nav content-bottom content-bottom ."
-      "nav sidebar-primary sidebar-secondary ."
-      "footer footer footer footer"
+      "blue . . ."
+      "dark-blue content content ."
+      "dark-blue gray gray ."
+      "dark-blue yellow dark-yellow ."
+      "red red red red"
     ;
     grid-gap: 0;
   }
@@ -116,12 +116,12 @@ body {
     grid-template-columns: 200px 1fr 1fr;
     grid-template-rows: auto 1fr auto auto auto;
     grid-template-areas:
-      "header . ."
-      ". nav nav"
+      "blue . ."
+      ". dark-blue dark-blue"
       ". content content"
-      ". content-bottom content-bottom"
-      ". sidebar-primary sidebar-secondary"
-      ". footer footer"
+      ". gray gray"
+      ". yellow dark-yellow"
+      ". red red"
     ;
     grid-gap: 0;
   }
