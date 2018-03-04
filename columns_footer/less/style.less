@@ -1,43 +1,31 @@
-.card {
-  background-color: #FFF;
-  border: 1px solid #E5E5E5;
+@import url('../../less/variables.less');
+
+section {
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+.column {
+  box-sizing: border-box;
+  padding-left: 10px;
+  padding-right: 10px;
   position: relative;
 
-  .flexbox &,
-  .grid & {
+  .flexbox & {
     display: flex;
     flex-direction: column;
   }
 
-  &-thumb {
-    max-width: 100%;
+  h3 {
+    border-bottom: 1px solid @gray;
+    padding-bottom: 10px;
+    text-transform: uppercase;
   }
 
-  &-body {
-    padding: 0 20px 20px;
-  }
-
-  &-thumb {
-    width: 100%;
-  }
-
-  &-body {
-    .flexbox &,
-    .grid & {
-      // as flex item
-      flex-grow: 1;
-
-      // as flex container
-      display: flex;
-      flex-direction: column;
-    }
-  }
-
-  &-description {
-    .flexbox &,
-    .grid & {
-      flex-grow: 1;
-    }
+  ul {
+    list-style: square;
+    margin-top: 0;
+    padding-left: 1em;
   }
 
   &-dismiss {
@@ -45,8 +33,7 @@
     color: blue;
     cursor: pointer;
 
-    .flexbox &,
-    .grid & {
+    .flexbox & {
       margin-top: auto;
     }
   }

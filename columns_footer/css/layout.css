@@ -1,49 +1,44 @@
-.floats .cards {
+.floats .columns {
   font-size: 0;
 }
-.floats .cards .card {
+.floats .columns::after {
+  display: table;
+  clear: both;
+  content: '';
+}
+.floats .column {
   float: left;
   font-size: 1rem;
   margin-right: 5px;
   vertical-align: top;
   width: calc(25% - 6px);
 }
-.floats .cards .card:last-child {
+.floats .column:last-child {
   margin-right: 0;
 }
-.floats .cards::after {
-  display: table;
-  clear: both;
-  content: '';
-}
-.inline-blocks .cards {
+.inline-blocks .columns {
   font-size: 0;
 }
-.inline-blocks .cards .card {
+.inline-blocks .column {
   display: inline-block;
   font-size: 1rem;
   margin-right: 5px;
   vertical-align: top;
   width: calc(25% - 6px);
 }
-.inline-blocks .cards .card:last-child {
+.inline-blocks .column:last-child {
   margin-right: 0;
 }
-.flexbox .cards {
+.flexbox .columns {
   display: flex;
   align-items: stretch;
   justify-content: space-between;
 }
-.flexbox .cards .card {
+.flexbox .column {
   flex-basis: 0;
   flex-grow: 1;
   margin-right: 5px;
 }
-.flexbox .cards .card:last-child {
+.flexbox .column:last-child {
   margin-right: 0;
-}
-.grid .cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(calc(25% - 5px), 1fr));
-  grid-gap: 5px;
 }

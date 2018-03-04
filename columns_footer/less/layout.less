@@ -1,0 +1,61 @@
+.floats {
+  .columns {
+    font-size: 0;
+
+    &::after {
+      display: table;
+      clear: both;
+      content: '';
+    }
+  }
+
+  .column {
+    float: left;
+    font-size: 1rem;
+    margin-right: 5px;
+    vertical-align: top;
+    width: calc(~'25% - 6px');
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+
+.inline-blocks {
+  .columns {
+    font-size: 0;
+  }
+
+  .column {
+    display: inline-block;
+    font-size: 1rem;
+    margin-right: 5px;
+    vertical-align: top;
+    width: calc(~'25% - 6px');
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+
+.flexbox {
+  .columns {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+  }
+
+  .column {
+    flex-basis: 0;
+    flex-grow: 1;
+    margin-right: 5px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
