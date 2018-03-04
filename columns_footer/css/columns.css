@@ -1,0 +1,49 @@
+.floats .cards {
+  font-size: 0;
+}
+.floats .cards .card {
+  float: left;
+  font-size: 1rem;
+  margin-right: 5px;
+  vertical-align: top;
+  width: calc(25% - 6px);
+}
+.floats .cards .card:last-child {
+  margin-right: 0;
+}
+.floats .cards::after {
+  display: table;
+  clear: both;
+  content: '';
+}
+.inline-blocks .cards {
+  font-size: 0;
+}
+.inline-blocks .cards .card {
+  display: inline-block;
+  font-size: 1rem;
+  margin-right: 5px;
+  vertical-align: top;
+  width: calc(25% - 6px);
+}
+.inline-blocks .cards .card:last-child {
+  margin-right: 0;
+}
+.flexbox .cards {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+}
+.flexbox .cards .card {
+  flex-basis: 0;
+  flex-grow: 1;
+  margin-right: 5px;
+}
+.flexbox .cards .card:last-child {
+  margin-right: 0;
+}
+.grid .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(calc(25% - 5px), 1fr));
+  grid-gap: 5px;
+}
