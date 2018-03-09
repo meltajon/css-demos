@@ -36,37 +36,6 @@ body {
 
 .alt2 {
   @media (min-width: 601px) {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto auto 1fr auto;
-    grid-template-areas:
-      "blue blue blue"
-      "dark-blue dark-blue dark-blue"
-      "content content content"
-      "yellow gray dark-yellow"
-      "red red red"
-    ;
-    grid-gap: 0;
-  }
-}
-
-.alt3 {
-  @media (min-width: 601px) {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto auto 1fr auto auto auto;
-    grid-template-areas:
-      "blue blue blue"
-      "dark-blue dark-blue dark-blue"
-      "content content content"
-      "gray gray gray"
-      "yellow yellow dark-yellow"
-      "red red red"
-    ;
-    grid-gap: 0;
-  }
-}
-
-.alt4 {
-  @media (min-width: 601px) {
     grid-template-columns: auto 1fr 1fr;
     grid-template-rows: auto auto 1fr auto auto auto;
     grid-template-areas:
@@ -81,7 +50,7 @@ body {
   }
 }
 
-.alt5 {
+.alt3 {
   @media (min-width: 601px) {
     grid-template-columns: 200px 1fr 1fr;
     grid-template-rows: auto 1fr auto auto auto;
@@ -96,16 +65,44 @@ body {
   }
 }
 
+.alt4 {
+  @media (min-width: 601px) {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto 1fr 1fr auto;
+    grid-template-areas:
+      "blue blue blue"
+      "dark-blue dark-blue dark-blue"
+      "content content content"
+      "yellow gray dark-yellow"
+      "red red red"
+    ;
+    grid-gap: 0;
+  }
+}
+
+.alt5 {
+  @media (min-width: 601px) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr 1fr auto auto;
+    grid-template-areas:
+      "blue dark-blue dark-blue dark-blue"
+      "content content gray gray"
+      "yellow yellow dark-yellow dark-yellow"
+      "red red red red"
+    ;
+    grid-gap: 0;
+  }
+}
+
 .alt6 {
   @media (min-width: 601px) {
-    grid-template-columns: 200px 1fr 1fr 200px;
-    grid-template-rows: auto 1fr auto auto auto;
+    grid-template-columns: 300px 1fr 1fr;
+    // grid-template-rows: auto 1fr auto auto auto;
     grid-template-areas:
-      "blue . . ."
-      "dark-blue content content ."
-      "dark-blue gray gray ."
-      "dark-blue yellow dark-yellow ."
-      "red red red red"
+      "gray . ."
+      "content yellow dark-yellow"
+      "content blue dark-blue"
+      "content red red"
     ;
     grid-gap: 0;
   }
@@ -113,15 +110,45 @@ body {
 
 .alt7 {
   @media (min-width: 601px) {
-    grid-template-columns: 200px 1fr 1fr;
-    grid-template-rows: auto 1fr auto auto auto;
+    grid-template-columns: .5fr 200px 1fr 1fr .5fr;
+    grid-template-rows: 100px auto 2fr auto 1fr auto;
     grid-template-areas:
-      "blue . ."
-      ". dark-blue dark-blue"
-      ". content content"
-      ". gray gray"
-      ". yellow dark-yellow"
-      ". red red"
+      ". gray . . ."
+      ". dark-blue dark-blue dark-blue ."
+      ". content content content ."
+      ". blue blue blue ."
+      ". yellow yellow dark-yellow ."
+      ". red red red ."
+    ;
+    grid-gap: 0;
+  }
+}
+
+.alt8 {
+  @media (min-width: 601px) {
+    grid-template-columns: 50px 1fr 1fr 1fr 1fr 50px;
+    grid-template-rows: 100px auto 1fr 1fr 100px;
+    grid-template-areas:
+      ". . . . . ."
+      ". dark-blue dark-blue dark-blue dark-blue ."
+      ". blue gray content content ."
+      ". yellow dark-yellow dark-yellow red ."
+      ". . . . . ."
+    ;
+    grid-gap: 15px;
+  }
+}
+
+.alt9 {
+  @media (min-width: 601px) {
+    // grid-template-columns: [full-start] minmax(1em, 1fr) [main-start] minmax(0, 40em) [main-end] minmax(1em, 1fr) [full-end];
+    grid-template-columns: minmax(1em, 1fr) minmax(0, 1fr) minmax(1em, 1fr);
+    grid-template-rows: auto 500px 300px auto 500px auto auto;
+    grid-template-areas:
+      "dark-blue dark-blue dark-blue"
+      "gray gray content"
+      "red dark-yellow yellow"
+      "blue blue blue"
     ;
     grid-gap: 0;
   }
