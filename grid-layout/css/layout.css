@@ -21,22 +21,6 @@
 }
 @media (min-width: 601px) {
   .alt2 {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto auto 1fr auto;
-    grid-template-areas: "blue blue blue" "dark-blue dark-blue dark-blue" "content content content" "yellow gray dark-yellow" "red red red";
-    grid-gap: 0;
-  }
-}
-@media (min-width: 601px) {
-  .alt3 {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto auto 1fr auto auto auto;
-    grid-template-areas: "blue blue blue" "dark-blue dark-blue dark-blue" "content content content" "gray gray gray" "yellow yellow dark-yellow" "red red red";
-    grid-gap: 0;
-  }
-}
-@media (min-width: 601px) {
-  .alt4 {
     grid-template-columns: auto 1fr 1fr;
     grid-template-rows: auto auto 1fr auto auto auto;
     grid-template-areas: "yellow blue blue" "yellow dark-blue dark-blue" "yellow content content" "yellow gray gray" "yellow dark-yellow dark-yellow" "yellow red red";
@@ -44,7 +28,7 @@
   }
 }
 @media (min-width: 601px) {
-  .alt5 {
+  .alt3 {
     grid-template-columns: 200px 1fr 1fr;
     grid-template-rows: auto 1fr auto auto auto;
     grid-template-areas: "dark-blue blue blue" "dark-blue content content" "dark-blue gray gray" "dark-blue yellow dark-yellow" "dark-blue red red";
@@ -52,19 +36,49 @@
   }
 }
 @media (min-width: 601px) {
+  .alt4 {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto 1fr 1fr auto;
+    grid-template-areas: "blue blue blue" "dark-blue dark-blue dark-blue" "content content content" "yellow gray dark-yellow" "red red red";
+    grid-gap: 0;
+  }
+}
+@media (min-width: 601px) {
+  .alt5 {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr 1fr auto auto;
+    grid-template-areas: "blue dark-blue dark-blue dark-blue" "content content gray gray" "yellow yellow dark-yellow dark-yellow" "red red red red";
+    grid-gap: 0;
+  }
+}
+@media (min-width: 601px) {
   .alt6 {
-    grid-template-columns: 200px 1fr 1fr 200px;
-    grid-template-rows: auto 1fr auto auto auto;
-    grid-template-areas: "blue . . ." "dark-blue content content ." "dark-blue gray gray ." "dark-blue yellow dark-yellow ." "red red red red";
+    grid-template-columns: 300px 1fr 1fr;
+    grid-template-areas: "gray . ." "content yellow dark-yellow" "content blue dark-blue" "content red red";
     grid-gap: 0;
   }
 }
 @media (min-width: 601px) {
   .alt7 {
-    grid-template-columns: 200px 1fr 1fr;
-    grid-template-rows: auto 1fr auto auto auto;
-    grid-template-areas: "blue . ." ". dark-blue dark-blue" ". content content" ". gray gray" ". yellow dark-yellow" ". red red";
+    grid-template-columns: .5fr 200px 1fr 1fr .5fr;
+    grid-template-rows: 100px auto 2fr auto 1fr auto;
+    grid-template-areas: ". gray . . ." ". dark-blue dark-blue dark-blue ." ". content content content ." ". blue blue blue ." ". yellow yellow dark-yellow ." ". red red red .";
     grid-gap: 0;
   }
 }
-/*# sourceMappingURL=layout.css.map */
+@media (min-width: 601px) {
+  .alt8 {
+    grid-template-columns: 50px 1fr 1fr 1fr 1fr 50px;
+    grid-template-rows: 100px auto 1fr 1fr 100px;
+    grid-template-areas: ". . . . . ." ". dark-blue dark-blue dark-blue dark-blue ." ". blue gray content content ." ". yellow dark-yellow dark-yellow red ." ". . . . . .";
+    grid-gap: 15px;
+  }
+}
+@media (min-width: 601px) {
+  .alt9 {
+    grid-template-columns: minmax(1em, 1fr) minmax(0, 1fr) minmax(1em, 1fr);
+    grid-template-rows: auto 500px 300px auto 500px auto auto;
+    grid-template-areas: "dark-blue dark-blue dark-blue" "gray gray content" "red dark-yellow yellow" "blue blue blue";
+    grid-gap: 0;
+  }
+}

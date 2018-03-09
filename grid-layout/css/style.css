@@ -30,14 +30,14 @@ body .red {
   background-color: #3F7DB6;
   grid-area: dark-blue;
 }
-.alt5 .dark-blue,
+.alt3 .dark-blue,
 .alt6 .dark-blue {
   display: block;
 }
 .dark-blue a {
   color: #FFF;
 }
-.alt5 .dark-blue a,
+.alt3 .dark-blue a,
 .alt6 .dark-blue a {
   display: block;
 }
@@ -80,4 +80,3 @@ body .red {
 .red::before {
   content: 'red';
 }
-/*# sourceMappingURL=style.css.map */
